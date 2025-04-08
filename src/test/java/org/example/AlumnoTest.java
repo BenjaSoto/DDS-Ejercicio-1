@@ -12,8 +12,10 @@ class AlumnoTest {
     @Test
     public void obtenerNombre() {
         Alumno alumno = new Alumno();
-        alumno.setNombre("Elvis Soto");
-        assertEquals("Elvis Soto", alumno.getNombre());
+        alumno.setNombre("Elvis");
+        alumno.setApellido("Soto");
+        assertEquals("Elvis", alumno.getNombre());
+        assertEquals("Soto", alumno.getApellido());
     }
 
     @Test
@@ -26,10 +28,10 @@ class AlumnoTest {
         materiasAprobadas.add(materia2);
 
         Alumno alumno = new Alumno();
-        alumno.setNombre("Elvis Soto");
+        alumno.setNombre("Elvis");
         alumno.setMateriasAprobadas(materiasAprobadas);
 
-        assertEquals("Elvis Soto", alumno.getNombre());
+        assertEquals("Elvis", alumno.getNombre());
         assertEquals(materiasAprobadas, alumno.getMateriasAprobadas());
     }
 
@@ -45,7 +47,7 @@ class AlumnoTest {
         materiasAprobadas.add(materia2);
 
         Alumno alumno = new Alumno();
-        alumno.setNombre("Elvis Soto");
+        alumno.setNombre("Elvis");
         alumno.setMateriasAprobadas(materiasAprobadas);
         assertTrue(alumno.aproboMateria(materia));
 
@@ -62,7 +64,7 @@ class AlumnoTest {
         materiasAprobadas.add(materia2);
 
         Alumno alumno = new Alumno();
-        alumno.setNombre("Elvis Soto");
+        alumno.setNombre("Elvis");
         alumno.setMateriasAprobadas(materiasAprobadas);
         assertFalse(alumno.aproboMateria(materia3));
     }

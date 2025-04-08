@@ -13,10 +13,10 @@ class InscripcionTest {
     public void obtenerAlumno(){
 
         Alumno alumno = new Alumno();
-        alumno.setNombre("Elvis Soto");
+        alumno.setNombre("Elvis");
         Inscripcion inscripcion = new Inscripcion();
         inscripcion.setAlumno(alumno);
-        assertEquals("Elvis Soto", inscripcion.getAlumno().getNombre());
+        assertEquals("Elvis", inscripcion.getAlumno().getNombre());
 
     }
 
@@ -24,10 +24,10 @@ class InscripcionTest {
     public void obtenerAlumnoDiferente(){
 
         Alumno alumno = new Alumno();
-        alumno.setNombre("Elvis Soto");
+        alumno.setNombre("Elvis");
         Inscripcion inscripcion = new Inscripcion();
         inscripcion.setAlumno(alumno);
-        assertNotEquals("Benjamin Soto", inscripcion.getAlumno().getNombre());
+        assertNotEquals("Benjamin", inscripcion.getAlumno().getNombre());
 
     }
 
@@ -67,7 +67,7 @@ class InscripcionTest {
 
 
         Alumno alumno = new Alumno();
-        alumno.setNombre("Elvis Soto");
+        alumno.setNombre("Elvis");
         alumno.addMateriaAprobada(materia_1a);
         alumno.addMateriaAprobada(materia_1b);
         alumno.addMateriaAprobada(materia_2a);
@@ -109,7 +109,7 @@ class InscripcionTest {
 
 
         Alumno alumno = new Alumno();
-        alumno.setNombre("Elvis Soto");
+        alumno.setNombre("Elvis");
         alumno.addMateriaAprobada(materia_2);
         alumno.addMateriaAprobada(materia_2a);
         alumno.addMateriaAprobada(materia_2b);

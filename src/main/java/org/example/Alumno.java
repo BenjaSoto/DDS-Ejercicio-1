@@ -8,6 +8,7 @@ import java.util.Set;
 public class Alumno {
 
     private String nombre;
+    private String apellido;
     private Set<Materia> materiasAprobadas = new HashSet<>();
 
 
@@ -20,6 +21,13 @@ public class Alumno {
     }
 
 
+    public String getApellido() {
+        return apellido;
+    }
+
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
+    }
 
     public String getNombre() {
         return this.nombre;
